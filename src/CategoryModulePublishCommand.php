@@ -107,13 +107,13 @@ class CategoryModulePublishCommand extends Command
      */
     protected function publishViews()
     {
-        $targetPath = app()->resourcePath() . "/views/item";
+        $targetPath = app()->resourcePath() . "/views/category";
 
         if (!File::isDirectory($targetPath)) {
             File::makeDirectory($targetPath, 0777, true, true);
         }
 
-        $this->publishDirectory(__DIR__ . '/resources/views/item/', app()->resourcePath() . "/views/item/");
+        $this->publishDirectory(__DIR__ . '/resources/views/category/', app()->resourcePath() . "/views/category/");
     }
 
     /**
