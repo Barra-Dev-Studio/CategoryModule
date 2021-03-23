@@ -6,26 +6,26 @@
  *
  */
 
-namespace BarraDev\StockModule;
+namespace BarraDev\CategoryModule;
 
 use Illuminate\Console\Command;
 use Illuminate\Support\Facades\File;
 
-class StockModulePublishCommand extends Command
+class CategoryModulePublishCommand extends Command
 {
     /**
      * The console command signature.
      *
      * @var string
      */
-    protected $signature = 'stockmodule:publish';
+    protected $signature = 'categorymodule:publish';
 
     /**
      * The console command description.
      *
      * @var string
      */
-    protected $description = 'Publish Stock Module assets from vendor packages';
+    protected $description = 'Publish Category Module assets from vendor packages';
 
     /**
      * Compatiblity for Lumen 5.5.
@@ -52,7 +52,7 @@ class StockModulePublishCommand extends Command
         $this->publishControllers();
         $this->publishRequests();
 
-        $this->info("Publishing Stock Module complete");
+        $this->info("Publishing Category Module complete");
     }
 
 

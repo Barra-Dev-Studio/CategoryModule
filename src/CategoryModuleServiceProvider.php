@@ -1,21 +1,21 @@
 <?php
 
 /*
- * This file is part of the Stock Module package.
+ * This file is part of the Category Module package.
  *
  * (c) Khoerul Umam <id.khoerulumam@gmail.com>
  *
  */
 
-namespace BarraDev\StockModule;
+namespace BarraDev\CategoryModule;
 
 use Illuminate\Support\ServiceProvider;
-use BarraDev\StockModule\StockModulePublishCommand;
+use BarraDev\CategoryModule\CategoryModulePublishCommand;
 
 /**
- * Stock Module Service Provider
+ * Category Module Service Provider
  */
-class StockModuleServiceProvider extends ServiceProvider
+class CategoryModuleServiceProvider extends ServiceProvider
 {
     /**
      * Bootstrap the application services.
@@ -26,7 +26,7 @@ class StockModuleServiceProvider extends ServiceProvider
     {
         if ($this->app->runningInConsole()) {
             $this->commands([
-                StockModulePublishCommand::class,
+                CategoryModulePublishCommand::class,
             ]);
         }
     }

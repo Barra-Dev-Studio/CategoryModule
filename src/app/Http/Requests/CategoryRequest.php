@@ -4,7 +4,7 @@ namespace App\Http\Requests;
 
 use Illuminate\Foundation\Http\FormRequest;
 
-class ItemRequest extends FormRequest
+class CategoryRequest extends FormRequest
 {
     /**
      * Determine if the user is authorized to make this request.
@@ -24,20 +24,20 @@ class ItemRequest extends FormRequest
     public function rules()
     {
         return [
-            'name' => ['required', 'unique:items,name,' . $this->id . ',id,deleted_at,NULL']
+            'name' => ['required', 'unique:categories,name,' . $this->id . ',id']
         ];
     }
 
     /**
-     * Get message
+     * Error message
      * 
      * @return array
      */
     public function messages()
     {
         return [
-            'name.required' => 'Kolom nama item tidak boleh kosong',
-            'name.unique' => 'Item sudah tersedia, gunakan nama lain'
+            'name.required' => 'Kolom nama tidak boleh kosong',
+            'name.unique' => 'Nama kategori sudah tersedia',
         ];
     }
 }

@@ -1,6 +1,6 @@
 {
-    "name": "barradev/stockmodule",
-    "description": "Modul stock barang untuk modul Barra Dev Studio",
+    "name": "barradev/categorymodule",
+    "description": "Modul pengelolaan kategori untuk modul Barra Dev Studio",
     "type": "package",
     "license": "MIT",
     "authors": [
@@ -17,7 +17,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "BarraDev\\StockModule\\StockModuleServiceProvider"
+                "BarraDev\\CetegoryModule\\CategoryModuleServiceProvider"
             ],
             "aliases": {}
         }
