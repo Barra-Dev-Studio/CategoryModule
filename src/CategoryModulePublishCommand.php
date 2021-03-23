@@ -48,7 +48,7 @@ class CategoryModulePublishCommand extends Command
         $this->publishMigrations();
         $this->publishServices();
         $this->publishViews();
-        $this->publishAssets();
+        // $this->publishAssets();
         $this->publishControllers();
         $this->publishRequests();
 
